@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <title>Landing Page</title>
+</head>
+
+<body>
+
+
+    <header id="header">
+        <div class="logo">
+            <a href="#">
+                <img src="/images/apple logo.png" alt="apple logo" id="header-img">
+            </a>
+        </div>
+        <nav id="nav-bar" class="nav-bar">
+            <div class="toggle">
+                <a href="javascript:void(0);" class="menu" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+            </li>
+            <ul class="navmenu" id="navBar">
+                <li><a href="#buy" class="nav-link">Buy</a></li>
+                <li><a href="#review" class="nav-link">Review</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+
+            </ul>
+
+        </nav>
+        <div class="header-container">
+            <div class="main-tag">
+                <h1 id="tag">Solutions</h1>
+                <p id="tag-desc">That Save you Money
+                </p>
+            </div>
+            <div id="main-bg">
+                <img src="/images/iphone1.png" alt="" class="iphone-bg">
+            </div>
+
+        </div>
+    </header>
+    <main>
+        <section id="review">
+            <div class="review-tag">
+                <h2>All New Features</h2>
+            </div>
+            <div class="review-container">
+                <div class="review-bg">
+                    <img class="iphone-bg1" src="/images/iphone.png" alt="">
+                </div>
+
+                <div class="review-video">
+                    <iframe id="video" width="727" height="409" src="https://www.youtube.com/embed/OJfOsoUYPts" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="buy">
+            <div class="buy-iphone">
+                <figure>
+
+                    <img src="/images/iphone2.jpg" alt="">
+                    <p><span class="cost">$99</span> <br>per month
+
+                    </p>
+                    <figcaption class="benefits">Mentorship
+                        <br> More Feautures
+                        <br> 24/7 Support
+                    </figcaption>
+
+                    <div class="btn">buy</div>
+                </figure>
+                <figure>
+
+                    <img src="/images/iphone2.jpg" alt="">
+                    <p><span class="cost">$99</span> <br>per month
+
+                    </p>
+                    <figcaption class="benefits">Mentorship
+                        <br> More Feautures
+                        <br> 24/7 Support
+                    </figcaption>
+
+                    <div class="btn">buy</div>
+                </figure>
+                <figure>
+
+                    <img src="/images/iphone2.jpg" alt="">
+                    <p><span class="cost">$99</span> <br>per month
+
+                    </p>
+                    <figcaption class="benefits">Mentorship
+                        <br> More Feautures
+                        <br> 24/7 Support
+                    </figcaption>
+
+                    <div class="btn">buy</div>
+                </figure>
+            </div>
+        </section>
+
+        <footer id="contact">
+            <div class="footer options">
+                <ul class="footer-nav">
+                    <li class="footer-items"><a href="#">Blog</a></li>
+                    <li class="footer-items"><a href="#">Site Map</a></li>
+                    <li class="footer-items"><a href="#">Career</a></li>
+                    <li class="footer-items"><a href="#">Pricing</a></li>
+                </ul>
+            </div>
+            <div class="form">
+                <form action=" https://www.freecodecamp.com/email-submit" method="POST" id="form">
+                    <input type="email" id="email" placeholder="Subscribe to our Newsletter" pattern="regexp" class="input-field" name="email">
+                    <input type="submit" value="Subscribe" id="submit" name="email">
+
+            </div>
+            </form>
+            </div>
+        </footer>
+    </main>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("navBar");
+            if (x.className === "navmenu") {
+                x.className += " responsive";
+            } else {
+                x.className = "navmenu";
+            }
+        }
+    </script>
+</body>
+
+
+</html>
